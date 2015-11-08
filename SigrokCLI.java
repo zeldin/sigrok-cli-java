@@ -245,9 +245,9 @@ class SigrokCLI
 
             /* Apply device settings from command line. */
             Map<ConfigKey, String> options = new HashMap<ConfigKey, String>();
-            options.put(ConfigKey.getLIMIT_MSEC(), "time");
-            options.put(ConfigKey.getLIMIT_SAMPLES(), "samples");
-            options.put(ConfigKey.getLIMIT_FRAMES(), "frames");
+            options.put(ConfigKey.LIMIT_MSEC, "time");
+            options.put(ConfigKey.LIMIT_SAMPLES, "samples");
+            options.put(ConfigKey.LIMIT_FRAMES, "frames");
             for (Map.Entry<ConfigKey, String> option : options.entrySet())
             {
                 ConfigKey key = option.getKey();
